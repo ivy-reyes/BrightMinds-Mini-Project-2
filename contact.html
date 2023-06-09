@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightMinds</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+    <!-- ********************** START OF NAVBAR ********************** -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+      <div class="container-fluid">
+          <a class="navbar-brand text-light d-flex ps-4" href="index.html">
+              <img src="assets/images/logo.png" alt="">
+              <div class="d-flex flex-column px-2">
+                  <span class="fs-1" id="logoBrand">BRIGHTMINDS</span>
+                  <span class="fs-6" id="logoTag">Digital Marketing</span>
+              </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item mx-3">
+                      <a class="nav-link active text-light fs-4 mx-3" aria-current="page" href="index.html">Who We Are</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                      <a class="nav-link active  text-light fs-4 mx-3" aria-current="page" href="what-we-do.html">What We Do</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                      <a class="nav-link active  text-light fs-4 mx-3" aria-current="page" href="works.html">Works</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                      <a class="nav-link active  text-light fs-4 mx-3" aria-current="page" href="contact.html">Contact Us</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <!-- ********************** END OF NAVBAR ********************** -->
+
+    <!-- Form ************************************************************************************** -->
+    <section class="formSection">
+      <div class="h1Div">
+        <h1 class="py-5 text-light display-4" id="h1contactUs">Contact Us</h1>
+      </div>
+  
+      <div class="formContactDiv d-flex flex-xl-row flex-column justify-content-xl-evenly align-items-center p-xl-5 py-5">
+        <div class="contactFormDiv w-xl-50 w-75 p-xl-5 d-flex flex-column justify-content-between">
+          <div>
+            <p class="m-0">
+              Thank you for your interest in our services. We would be more than happy to answer any questions you may have. Please feel free to send us a message with your inquiry and we will get back to you as soon as possible. We look forward to hearing from you and discussing how we can help you achieve your marketing goals.
+            </p>
+          </div>
+          <form class="d-flex flex-column" id="contactForm" name="contactForm" action="#" method="#">
+            <label for="serviceSelected">Service needed</label>
+            <select id="serviceSelected" name="serviceSelected">
+              <option value="No selected service">...</option>
+              <option value="Creative Content Storytelling">Creative Content Storytelling</option>
+              <option value="Web Development & Design">Web Development & Design</option>
+              <option value="Multi-channel Marketing">Multi-channel Marketing</option>
+              <option value="Celebrity & Influencer Management">Celebrity & Influencer Management</option>
+              <option value="Integrated 360° Marketing and Digital Communication">Integrated 360° Marketing and Digital Communication</option>
+              <option value="Social and Digital Media Marketing">Social and Digital Media Marketing</option>
+            </select>
+      
+            <label for="userName">Full Name</label>
+            <input type="text" id="userName" name="userName">
+      
+            <label for="userEmail">Email</label>
+            <input type="email" id="userEmail" name="userEmail">
+      
+            <label for="userMessage">Message</label>
+            <textarea id="userMessage" name="userMessage"></textarea>
+      
+            <div class="text-end">
+              <input id="contactSendBtn" name="contactSendBtn" type="submit" value="Send">
+            </div>
+          </form>
+        </div>
+    
+        <div class="contactInfoDiv w-xl-50 w-75 p-xl-5 d-flex flex-column justify-content-between my-xl-0 mt-5">
+          <div>
+            <h4 class="pb-4">Contact Information</h4>
+            <p >Name: Bright Minds Digital Marketing</p>
+            <p>E-mail: brightmiiinds@gmail.com</p>
+            <p>Contacts: +63 (912) 345-6789</p>
+            <p>Address: Brain Train Centre, Laguna Business Park, Santa Rosa City, Laguna 4026</p>
+          </div>
+  
+          <div class="mapDiv">
+            <iframe class="mapFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3867.0780420667793!2d121.06673197456702!3d14.248669685597118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd7d487b0b9f73%3A0x771c2808c0982a17!2sBrain%20Train%20Centre!5e0!3m2!1sen!2sph!4v1681883983636!5m2!1sen!2sph"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Form ************************************************************************************** -->
+
+    <!-- Footer ************************************************************************************ -->
+    <div class="footerRow row p-0 m-0">
+      <footer class="footer text-center text-white">
+        <div class="container p-4 pb-0">
+          <section class="mb-2">
+            <a class="social-btn btn-outline-light btn-floating m-1 text-decoration-none" href="https://www.facebook.com/KodegoPH" role="button">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a class="social-btn btn-outline-light btn-floating m-1 text-decoration-none" href="#!" role="button">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="social-btn btn-outline-light btn-floating m-1 text-decoration-none" href="#!" role="button">
+              <i class="fa-brands fa-google"></i>
+            </a>
+            <a class="social-btn btn-outline-light btn-floating m-1 text-decoration-none" href="#!" role="button">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="social-btn btn-outline-light btn-floating m-1 text-decoration-none" href="#!" role="button">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a class="social-btn btn-outline-light btn-floating m-1 text-decoration-none" href="https://www.youtube.com/@kodego1257" role="button">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </section>
+        </div>
+        <div class="container p-2 pb-0">
+          <ul class="nav justify-content-center">
+            <li class="footerli nav-item"><a href="#" class="nav-link px-5 text-light">License</a></li>
+            <li class="footerli nav-item"><a href="#" class="nav-link px-5 text-light">Terms of Service</a></li>
+            <li class="footerli nav-item"><a href="#" class="nav-link px-5 text-light">Policy Privacy</a></li>
+            <li class="footerli nav-item"><a href="#" class="nav-link px-5 text-light">Refunds</a></li>
+            <li class="footerli nav-item"><a href="#" class="nav-link px-5 text-light">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="copyright text-center p-3"> © 2023 BrightMinds Digital Marketing</div>
+      </footer>
+    </div>
+    <!-- Footer ************************************************************************************ -->
+    
+    <!-- Scripts -->
+    <script src="assets/script/contact.js"></script>
+    <script src="https://kit.fontawesome.com/2780e15db7.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

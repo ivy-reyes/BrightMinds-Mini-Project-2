@@ -1,0 +1,738 @@
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&family=Lobster&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: 'Fira Sans Condensed', sans-serif;
+    }
+
+    :root {
+        --Black: rgb(0,0,0);
+        --GrnBlue: rgb(1,175,183); 
+        --BluGreen: rgb(4,123,142); 
+        --DrkBlue: rgb(30,44,64); 
+        --Gray: rgb(52,66,76); 
+        --LtGray: rgb(146,169,173); 
+        --LtltGrey: rgb(220, 232, 235); 
+        --White: rgb(255,255,255);
+        --bgImage: url("../images/contact_bg.jpg");
+    }
+
+    /* START OF HEADER */
+    .bldg {
+        background-image: url(../images/bldg_avif.png);
+        height: 100vh;
+        width: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: 50% 50%;
+    }
+    .bldg-box {
+        width: 60%;
+        padding: 0 20px;
+        background: rgba(179, 170, 170, 0.05);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        border-radius: 20px;
+        border: 2px solid white;
+        backdrop-filter: blur(25px);
+        box-shadow: -15px 17px 17px rgba(0, 0, 0, 0.6);
+    }
+    .tl1, .tl2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        font-family: 'Fira Sans Condensed', sans-serif;
+        flex-wrap: wrap;
+        font-weight: 500;
+        color: rgb(30,44,63);
+        text-shadow: 3px 1px rgba(128, 128, 128, 0.361);
+    }
+    .tl1 {
+        font-size: 175px;
+        font-family: 'Lobster', cursive;
+    }
+    .tl2 {
+        font-size: 53px;
+        margin-bottom: 40px;
+    }
+    .explore-btn{
+        justify-content: space-around;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        
+    }
+    .explore-btn a button{
+        font-family: 'Fira Sans Condensed', sans-serif;  
+        font-weight: 600;
+        border-radius: 20px;
+        font-size: 25px;
+        background-color: rgb(30,44,62);
+        color: white;
+        border: 5px solid rgb(30,44,62);
+        padding: 5px 10px;
+
+    }
+    .explore-btn a {
+        padding-left: 20px;
+    }
+    .explore-btn a :hover {
+        color: black;
+        background-color: rgb(206,224,233);
+        border-radius: 25px;
+    }
+    .intro {
+        background: rgb(145,169,173);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9;
+    }
+    .intro-text .text {
+        color: aliceblue;
+        font-family: 'Merriweather', serif;
+        font-size: 84px; 
+    }
+    .slider {
+        background: rgb(145,169,173);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateY(100%);
+        z-index: 9;
+    }
+
+    .hide {
+        background: rgb(145,169,173);
+        overflow: hidden;
+    }
+
+    .hide span {
+        transform: translateY(100%);
+        display: inline-block;
+    }
+
+
+    /* END OF HEADER */
+
+    /* START OF NAVBAR */
+    #logoBrand {
+        color: var(--BluGreen);
+        border-bottom: 3px solid var(--BluGreen);
+        font-weight: 700;
+    }
+
+    #logoTag {
+        color: var(--Black);
+    }
+    .navbar {
+        background-color: rgb(146,169,173);
+    }
+    /* END OF NAVBAR */
+
+    /* START OF ABOUT */
+
+    .about-desc {
+        width: 50%;
+        background-color: rgb(206,224,233);
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        padding-left: 30px;
+    }
+
+    .about-desc h1 {
+        font-size: 108px;
+        margin-top: 160px;
+        color: rgb(48,75,83);
+    }
+
+    .about-desc p {
+        font-size: 28px;
+        text-align: justify;
+        color: rgb(48,75,83);
+        
+    }
+
+    .about-photo {
+        width: 50%;
+        background-color: rgb(206,224,233);
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-photo img {
+        height: 80vh;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .about-desc-btn {
+        font-family: 'Fira Sans Condensed', sans-serif;  
+        border-radius: 3px;
+        font-size: 33px;
+        width: 192px;
+        background-color: rgb(206,224,233);
+        color: rgb(48,75,83);
+        border: 3px solid rgb(30,44,62);
+    }
+    .about-desc a :hover {
+        background-color: rgb(30,44,62);
+        color: rgb(207, 208, 209);
+    }
+    /* End of About */
+
+    /* Start Of Counter */
+    .counter{
+        background-color: rgb(174,214,216);
+        display: flex;  
+        justify-content: space-around;
+    }
+
+    .counter-container{
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(48,75,83);
+    }
+
+    .counter-container .fa-solid{
+        font-size: 100px;
+        color: rgb(49,70,77);
+    }
+
+    .counter-container .content{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .num{
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    /* End Of Counter */
+
+    /* Start of Skills */
+    .skills-desc {
+        width: 50%;
+        background-color: rgb(206,224,233);
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        padding-right: 50px;
+    }
+
+    .skills-desc h1 {
+        font-size: 108px;
+        margin-top: 230px;
+        color: rgb(48,75,83);
+        padding-left: 30px;
+    }
+
+    .skills-desc p {
+        font-size: 28px;
+        text-align: justify;
+        color: rgb(48,75,83);
+        padding-left: 30px;
+        
+    }
+
+    .skills-photo {
+        width: 50%;
+        background-color: rgb(206,224,233);
+        display: flex;
+        justify-content: center;
+    }
+
+    .skills-photo img {
+        height: 80vh;   
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    /* End Of Skills */
+
+    /* Start of Services */
+    .services{
+        background-color: rgb(174,214,216);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 50px;
+        
+    }
+
+    .services a, .promote a, .manage a{
+        text-decoration: none;
+    }
+    .promote div div h5, .promote div div p{
+        color: rgb(48,75,83);
+    }
+
+    .create div div h5, .create div div p{
+        color: rgb(48,75,83);
+    }
+
+    .manage div div h5, .manage div div p{
+        color: rgb(48,75,83);
+    }
+    .card{
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+    .card:hover{
+        transform: scale(1.15);
+    }
+    .card-title{
+        font-size: 28px;
+    }
+    .card-text{
+        font-size: 20px;
+    }
+    /* End of Services */
+
+    /* Start of Members */
+
+    .member-title{
+        height: 40vh;
+        background-image: url("../images/members-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:rgb(30,44,62);
+        background-attachment: fixed;
+        padding: 10px;
+    }
+    .member-title h1{
+        font-size: 82px;
+    }
+
+    .member-container{
+        background-color: rgb(205,223,233);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .member-image{
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 26rem;
+    }
+
+    .member{
+        position: relative;
+        margin: 30px 0;
+    }
+    .member-body{
+        height: 40%;
+        width: 90%;
+        background: rgb(174,214,216,0.8);
+        position: absolute;
+        top: 40%;
+        right: 5%;
+        backdrop-filter: blur(5px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all .3s ease;
+        opacity: 0;
+    }
+
+    .member:hover .member-body{
+        opacity: 1;
+    }
+
+    .member-name h1{
+        font-size: 42px;
+        color: black;
+    }
+
+    .member-position{
+        padding: 10px;
+        font-size: 24px;
+    }
+
+    .member-socials a{
+        padding: 0 10px;
+        color: black;
+    }
+    /* End of Members */
+
+    /* Start of Pricing */
+    .price {
+        background-color: rgb(173,213,215);
+        color: rgb(48,75,83);
+        padding-top: 30px;
+    }
+    .ourprice {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-size: 60px;
+    }
+    .offers {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .offers div {
+        width: 28rem;
+        background-color: aliceblue;
+        padding-top: 24px;
+        padding-left: 24px;
+        padding-right: 12px;
+        margin: 30px;
+    
+    }
+    .offers div h2 {
+        padding-bottom: 20px;
+    }
+
+    .offers div h1 {
+        font-size: 42px;
+    }
+    .price-starts {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 800;
+        color: rgb(254,149,141);
+    }
+
+    .offers div p {
+        font-size: 28px;
+    }
+    .price a{
+        justify-content: center;
+        display: flex;
+        text-decoration: none;
+        margin-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    /* End of Pricing */
+
+    /* Start of brand */
+    .brand-logo {
+        background-color: rgb(173,213,215);
+        display: flex;
+        justify-content: space-around;
+    }
+    .brand-logo div img {
+        width: 8rem;
+        border-radius: 50%;
+        padding-top: 30px;
+        padding-bottom: 30px; 
+    }
+    /* End of brand */
+
+    /* Footer */
+    .footer {
+        background-color: rgb(146,169,173);
+        position: sticky;
+        bottom: 0;
+    }
+    .footerli, .navli, .copyright {
+        font-size: 15px;
+    }
+    .social-btn{
+        font-family: 'Fira Sans Condensed', sans-serif;  
+        font-weight: 500;
+        border-radius: 25px;
+        font-size: 20px;
+        background-color: rgb(30,44,62);
+        color: white;
+        border: 5px solid rgb(30,44,62);
+        padding: 5px 10px;
+        text-align: center;
+    }
+    .social-btn:hover {
+        color: black;
+        background-color: rgb(206,224,233);
+        border-radius: 25px;
+    }
+
+    /******************** Start of Media ********************/
+
+    /* Start of landing page */
+
+    @media (max-width: 870px) {
+        .tl1 {
+            font-size: 60px;
+        }
+        .tl2 {
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+        .explore-btn a button {
+            font-size: 20px;
+        } 
+    }
+
+    @media (max-width: 530px) {
+        .tl1 {
+            font-size: 36px;
+        }
+        .tl2 {
+            font-size: 11px;
+            margin-bottom: 14px;
+        }
+        .explore-btn a button {
+            font-size: 12px;
+        } 
+    }
+    /* End of landing page */
+
+
+    /* Start of about page */
+    @media (max-width: 1040px) {
+        .about-desc h1 {
+            font-size: 60px;
+        }
+        .about-desc p {
+            font-size: 16px;
+        }
+        .about-desc-btn {
+            font-size: 24px;
+        }
+    }
+
+    @media (max-width: 960px) {
+        .about-photo img {
+            height: 70vh;
+            margin-top: 55px;
+            margin-bottom: 55px;
+        }
+        .about-desc h1 {
+            margin-top: 120px;
+        }
+    }
+
+    @media (max-width: 840px) {
+        .about-desc h1 {
+            font-size: 50px;
+            margin-top: 90px;
+        }
+        .about-desc p {
+            font-size: 14px;
+        }
+        .about-desc-btn {
+            font-size: 19px;
+        }
+        .about-photo img {
+            height: 60vh;
+            margin-top: 45px;
+            margin-bottom: 45px;
+        }
+    }
+
+    @media (max-width: 710px) {
+        .about-desc h1 {
+            font-size: 40px;
+            margin-top: 70px;
+        }
+        .about-desc p {
+            font-size: 10px;
+        }
+        .about-desc-btn {
+            font-size: 16px;
+        }
+        .about-photo img {
+            height: 50vh;
+            margin-top: 45px;
+            margin-bottom: 45px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .about{
+            flex-direction: column-reverse;
+        }
+        .about-desc, .about-photo{
+            width: 100%;
+        }
+        .about-desc h1 {
+            margin-top: 10px;
+            padding-right: 30px;
+        }
+        .about-desc p {
+            padding-right: 30px;
+        }
+        .about-desc-btn{
+            margin-bottom: 30px;
+        }
+    }
+    /* End of about page */
+
+
+    /* Start of Counter */
+
+    @media (max-width: 900px) {
+        .counter-container .fa-solid{
+            font-size: 80px;
+        }
+        .counter-container .content{
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .num{
+            font-size: 35px;
+        }
+    }
+
+    @media (max-width: 750px) {
+        .counter-container .fa-solid{
+            font-size: 70px;
+        }
+        .num{
+            font-size: 30px;
+        }
+    }
+
+    @media (max-width: 670px) {
+        .counter-container .fa-solid{
+            font-size: 50px;
+        }
+        .num{
+            font-size: 21px;
+        }
+    }
+
+    @media (max-width: 670px) {
+        .counter {
+        flex-wrap: wrap;
+        }
+        .counter-container{
+            height: 20vh;
+            justify-content: left;
+            padding-left: 80px;
+        }
+    }
+
+    /* End of Counter */
+
+
+    /* Start of skills page */
+    @media (max-width: 1080px) {
+        .skills-desc h1 {
+            margin-top: 150px;
+        }
+    }
+
+    @media (max-width: 962px) {
+        .skills-desc h1 {
+            font-size: 60px;
+        }
+        .skills-desc p {
+            font-size: 16px;
+        }
+        .skills-photo img {
+            height: 70vh;
+            margin-top: 55px;
+            margin-bottom: 55px;
+        }
+    }
+
+
+    @media (max-width: 840px) {
+        .skills-desc h1 {
+            font-size: 50px;
+            margin-top: 90px;
+        }
+        .skills-desc p {
+            font-size: 14px;
+        }
+        .skills-photo img {
+            height: 60vh;
+            margin-top: 45px;
+            margin-bottom: 45px;
+        }
+    }
+
+    @media (max-width: 710px) {
+        .skills-desc h1 {
+            font-size: 40px;
+            margin-top: 70px;
+        }
+        .skills-desc p {
+            font-size: 10px;
+        }
+        .skills-photo img {
+            height: 50vh;
+            margin-top: 45px;
+            margin-bottom: 45px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .skills{
+            flex-direction: column;
+        }
+        .skills-desc, .skills-photo{
+            width: 100%;
+        }
+        .skills-desc h1 {
+            margin-top: 10px;
+            padding-right: 30px;
+        }
+        .skills-desc p {
+            padding-right: 30px;
+        }
+        .skills-desc{
+            padding-left: 30px;
+        }
+    }
+    /* End of skills page */
+
+
+    /* Start of services page */
+    .card{
+        margin: 30px 0;
+    }
+    /* End of services page */
+
+
+    /* Start of brand */
+    @media (max-width: 1045px) {
+        .brand-logo div img{
+            width: 5rem;
+        }
+    }
+    @media (max-width: 760px) {
+        .brand-logo div img{
+            width: 3rem;
+        }
+    }
+    @media (max-width: 430px) {
+        .brand-logo div img{
+            width: 2rem;
+        }
+    }
+    /* End of brand */
+    /******************** End of Media ********************/

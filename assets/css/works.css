@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&family=Lobster&display=swap');
+
+:root {
+    --Black: rgb(0,0,0);
+    --GrnBlue: rgb(1,175,183); 
+    --BluGreen: rgb(4,123,142); 
+    --DrkBlue: rgb(30,44,64); 
+    --Gray: rgb(52,66,76); 
+    --LtGray: rgb(146,169,173); 
+    --LtltGrey: rgb(220, 232, 235); 
+    --White: rgb(255,255,255);
+    --bgImage: url("../images/contact_bg.jpg");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+/* START OF NAVBAR */
+#logoBrand {
+    color: var(--BluGreen);
+    border-bottom: 3px solid var(--BluGreen);
+    font-weight: 700;
+}
+
+#logoTag {
+    color: var(--Black);
+}
+.navbar {
+    background-color: rgb(146,169,173);
+}
+/* END OF NAVBAR */
+
+.reviewsDiv {
+    height: 400px;
+}
+#carouselExampleControls {
+    background-color: rgb(204,222,233);
+}
+.card {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    box-shadow: 10px 8px 20px var(--Gray);
+}
+
+.fa-quote-right{
+    color: rgb(48,75,83);
+}
+.card-text{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+}
+#formDiv {
+    background-color: rgb(173,213,215);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+}
+.review-head{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 30px;
+    margin-left: 90px;
+}
+.review-head h1{
+    font-size: 70px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 900;
+    padding: 0 30px;
+    color: rgb(48,75,83);
+}
+
+#reviewForm {
+    border: 1px solid rgb(204,222,233);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 30px;
+    background-color: rgb(245, 245, 245);
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+}
+
+#clientName, #clientReview{
+    border-radius: 5px;
+    border: 1px dotted var(--LtGray);
+    background-color: var(--LtltGrey);
+}
+
+.starv1 {
+    color: orange;
+}
+
+#reviewSendBtn {
+    border-radius: 5px;
+    border: 1px dotted var(--LtGray);
+    background-color: var(--DrkBlue);
+    color: var(--White);
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    
+}
+
+/* *********** */
+.rating:not(:checked) > input {
+    position:absolute;
+    display: none;
+}
+.rating:not(:checked) > label {
+    float:right;
+    width:1.5em;
+    overflow:hidden;
+    /* white-space:nowrap; */
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+
+.rating > input:checked ~ label {
+    color: var(--BluGreen);    
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color:  #ffc700;
+}
+
+.reviews-head{
+    background-color: rgb(204,222,233);
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 900;
+    color: rgb(48,75,83);
+    text-align: center;
+}
+
+/* Start of brand */
+.brand-logo {
+    background-color: rgb(173,213,215);
+    text-align: center;
+}
+.partners-head{
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 900;
+    color: rgb(48,75,83);
+}
+.partners{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    
+}
+
+.partners div{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: -100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right,rgb(204,222,233), rgb(203,221,233));
+    border-radius: 50%;
+    opacity: 0.3;
+}
+.brand-logo div img {
+    width: 8rem;
+    border-radius: 50%;
+    background: #ccc;
+}
+/* End of brand */
+
+/* Footer */
+.footer {
+    background-color: rgb(146,169,173);
+    position: sticky;
+    bottom: 0;
+}
+.footerli, .navli, .copyright {
+    font-size: 15px;
+}
+.social-btn{
+    font-family: 'Fira Sans Condensed', sans-serif;  
+    font-weight: 500;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: rgb(30,44,62);
+    color: white;
+    border: 5px solid rgb(30,44,62);
+    padding: 5px 10px;
+}
+.social-btn:hover {
+    color: black;
+    background-color: rgb(206,224,233);
+    border-radius: 25px;
+}
+
+/* Start of brand media*/
+@media (max-width: 1045px) {
+    .brand-logo div img{
+        width: 5rem;
+    }
+}
+@media (max-width: 760px) {
+    .brand-logo div img{
+        width: 3rem;
+    }
+}
+@media (max-width: 430px) {
+    .brand-logo div img{
+        width: 2rem;
+    }
+}
+/* End of brand media*/
